@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>THE RUNNERS® LAGOS — Moving Together. From the Bridge to the Atlantic.</title>
+  <meta name="description" content="A free, non-competitive running community based in Lagos, Nigeria. 5–10km morning community runs across the Lekki-Ikoyi Link Bridge, Victoria Island, and beyond. Built for connection and collective rhythm.">
+  <meta name="theme-color" content="#09090b">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="THE RUNNERS® LAGOS — Moving Together. From the Bridge to the Atlantic.">
+  <meta property="og:description" content="Free community runs across Lagos at sunrise. Saturdays at 05:30 AM on the Lekki-Ikoyi Link Bridge. All paces welcome.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SITE HEADER / FLOATING NAVIGATION
+       ═══════════════════════════════════════════════════════════ -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      
+      <!-- Brand Logo (Image Only, Brand Text Removed) -->
+      <a href="#" class="brand-logo" aria-label="The Runners Lagos Homepage">
+        <img src="assets/logo.png" alt="The Runners Lagos" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">Manifesto</a></li>
+          <li><a href="#routes" class="nav-link">Circuits</a></li>
+          <li><a href="#schedule" class="nav-link">Calendar</a></li>
+          <li><a href="#paces" class="nav-link">Paces</a></li>
+          <li><a href="#stories" class="nav-link">Stories</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="#rsvp" class="btn btn-primary" data-open-rsvp>
+          Join Free
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Burger Trigger -->
+        <button class="burger-btn" id="burgerBtn" aria-label="Toggle navigation menu">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav-top">
+      <div class="mobile-nav-header">
+        <div class="mobile-nav-brand">
+          <img src="assets/logo.png" alt="The Runners Lagos" class="brand-logo-img" style="width: 36px; height: 36px;">
+          <span class="mobile-nav-title">The Runners</span>
+        </div>
+        <button class="mobile-close-btn" id="closeMobileNavBtn" aria-label="Close navigation menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-nav-links">
+        <a href="#about" class="mobile-nav-link">
+          <span>Manifesto</span>
+          <span class="mobile-nav-arrow">→</span>
+        </a>
+        <a href="#routes" class="mobile-nav-link">
+          <span>Lagos Circuits</span>
+          <span class="mobile-nav-arrow">→</span>
+        </a>
+        <a href="#schedule" class="mobile-nav-link">
+          <span>Weekly Calendar</span>
+          <span class="mobile-nav-arrow">→</span>
+        </a>
+        <a href="#paces" class="mobile-nav-link">
+          <span>Pace Crews</span>
+          <span class="mobile-nav-arrow">→</span>
+        </a>
+        <a href="#rituals" class="mobile-nav-link">
+          <span>Post-Run Rituals</span>
+          <span class="mobile-nav-arrow">→</span>
+        </a>
+        <a href="#stories" class="mobile-nav-link">
+          <span>Runner Stories</span>
+          <span class="mobile-nav-arrow">→</span>
+        </a>
+        <a href="#faq" class="mobile-nav-link">
+          <span>First-Timer FAQ</span>
+          <span class="mobile-nav-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <p class="mobile-nav-coords tabular-nums">
+        LAGOS, NIGERIA · 6°27'18" N, 3°27'42" E
+      </p>
+      <button class="btn btn-primary" style="width: 100%;" data-open-rsvp>
+        RSVP For Saturday Run (Free)
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         HERO SECTION (Editorial Athletic Dawn)
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="hero-section" id="hero">
+      
+      <!-- Video / Cinematic Background -->
+      <div class="hero-media-wrapper">
+        <video 
+          class="hero-video" 
+          autoplay 
+          loop 
+          muted 
+          playsinline 
+          poster="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1600&q=80">
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-runners-in-a-park-at-sunrise-41718-large.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay-gradient"></div>
+      </div>
+
+      <div class="hero-content">
+        
+        <div class="hero-badge-row">
+          <span class="hero-tag">Community Run Collective</span>
+          <span class="hero-coords">LAGOS, NIGERIA · 6.4474° N, 3.4723° E</span>
+          <span class="hero-coords">· EVERY SATURDAY 05:30 AM</span>
+        </div>
+
+        <!-- Giant Editorial Headline -->
+        <h1 class="hero-heading">
+          The<br>Runners.
+        </h1>
+
+        <!-- Footer Grid: Quote + Floating Next Run Card -->
+        <div class="hero-footer-grid">
+          
+          <div class="hero-quote-block">
+            <p class="hero-quote text-pretty">
+              "We don't run to escape Lagos. We run to <em>feel its heartbeat</em> on the asphalt before the city roars into motion."
+            </p>
+            <div class="hero-founder-meta">
+              <span>Femi B. & Tolu O.</span>
+              <span>·</span>
+              <span>Co-Founders, The Runners Lagos</span>
+              <span>·</span>
+              <span class="tabular-nums">Est. 2024</span>
+            </div>
+          </div>
+
+          <!-- Floating Next Run Card -->
+          <div class="hero-run-card" id="runs">
+            <div class="card-header-flex">
+              <div>
+                <span class="card-label">Upcoming Morning Run #84</span>
+                <h3 class="card-run-title">Lekki-Ikoyi Bridge</h3>
+              </div>
+              <div class="card-date tabular-nums">
+                10<span style="color: var(--accent-orange);">.</span>10
+              </div>
+            </div>
+
+            <div class="card-details-grid">
+              <div class="detail-col">
+                <p>Meeting Point</p>
+                <p>Admiralty Toll Plaza</p>
+              </div>
+              <div class="detail-col">
+                <p>Sunrise Rollout</p>
+                <p class="tabular-nums">05:30 AM Warmup</p>
+              </div>
+              <div class="detail-col">
+                <p>Distances</p>
+                <p class="tabular-nums">6.5 KM · 10.0 KM</p>
+              </div>
+              <div class="detail-col">
+                <p>Hydration</p>
+                <p>Chilled Fresh Coconut</p>
+              </div>
+            </div>
+
+            <button class="btn btn-primary" style="width: 100%;" data-open-rsvp data-route="Lekki-Ikoyi Link Bridge (10.10)">
+              Join This Run (Free RSVP)
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         LIVE SUNRISE COUNTDOWN TICKER
+         ═══════════════════════════════════════════════════════════ -->
+    <div class="countdown-ticker-bar">
+      <div class="container countdown-ticker-inner">
+        <div class="ticker-label-wrap">
+          <span class="pulse-dot"></span>
+          <span class="ticker-label">
+            Countdown to Saturday Sunrise Rollout:
+          </span>
+        </div>
+        <div id="nextRunCountdown" class="ticker-timer tabular-nums">
+          --d : --h : --m : --s
+        </div>
+        <div class="ticker-weather">
+          TEMP: ~26°C · HUMIDITY: 82% · LAGOS MORNING BREEZE
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         MANIFESTO / ABOUT SECTION
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="manifesto-section" id="about">
+      <div class="container">
+        
+        <div class="manifesto-header-wrap">
+          <span class="section-label">01 // The Manifesto</span>
+          <h2 class="section-title text-balance">
+            Moving Together.<br>
+            <span class="dimmed">From the Bridge to the Atlantic.</span>
+          </h2>
+        </div>
+
+        <div class="manifesto-story-grid">
+          <p class="section-lead text-pretty">
+            Lagos is a city of relentless kinetic ambition. But at 05:30 in the morning, before the horns blare and the yellow danfos flood the expressways, the coastal roads belong to us.
+          </p>
+
+          <div>
+            <p class="text-secondary text-pretty" style="line-height: 1.65; margin-bottom: 2rem;">
+              <strong>The Runners</strong> is an independent, non-commercial collective born on the Lekki-Ikoyi Link Bridge. We do not sell apparel, running shoes, or supplements. We have no paywalled memberships. We gather every Saturday and Tuesday morning for the pure, unadulterated discipline of morning movement, deep conversational pacing, and genuine Lagos community.
+            </p>
+
+            <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+              <a href="#routes" class="btn btn-outline">Explore Our Circuits</a>
+              <a href="#paces" class="btn btn-ghost" style="color: var(--accent-orange);">View Pace Groups →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Full-Width Responsive Stats Showcase Strip -->
+        <div class="stats-showcase-grid">
+          <div class="stat-box">
+            <div class="stat-badge">MEMBERS</div>
+            <div class="stat-number tabular-nums">3,400<span class="accent">+</span></div>
+            <div class="stat-label">Community Runners</div>
+            <div class="stat-subtext">Active across Lagos circuits</div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-badge">HISTORY</div>
+            <div class="stat-number tabular-nums">84</div>
+            <div class="stat-label">Saturday Mornings</div>
+            <div class="stat-subtext">Consecutive runs hosted</div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-badge">INDEPENDENCE</div>
+            <div class="stat-number tabular-nums">100<span class="accent">%</span></div>
+            <div class="stat-label">Free Forever</div>
+            <div class="stat-subtext">Zero commercial paywalls</div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-badge">PROMISE</div>
+            <div class="stat-number tabular-nums">0</div>
+            <div class="stat-label">Left Behind</div>
+            <div class="stat-subtext">Dedicated sweepers on all routes</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SIGNATURE ROUTES SHOWCASE ("LAGOS CIRCUITS")
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="routes-section" id="routes">
+      <div class="container">
+        
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem;">
+          <div>
+            <span class="section-label">02 // Lagos Circuits</span>
+            <h2 class="section-title text-balance">
+              Engineered Routes.<br>
+              <span class="dimmed">City by City, Mile by Mile.</span>
+            </h2>
+          </div>
+          <p class="text-secondary" style="max-width: 380px; font-size: 0.95rem;">
+            Click on any circuit to inspect elevation data, hydration checkpoints, and terrain highlights.
+          </p>
+        </div>
+
+        <!-- Routes Grid -->
+        <div class="routes-grid">
+          
+          <!-- Circuit 1: Lekki-Ikoyi Bridge -->
+          <div class="route-card" data-route-key="bridge">
+            <div>
+              <div class="route-map-canvas">
+                <!-- Vector Route SVG with Glow -->
+                <svg class="route-map-svg" viewBox="0 0 240 140" fill="none">
+                  <path d="M 20,110 C 50,110 70,80 100,50 C 130,20 170,20 200,60 C 220,90 200,120 160,115 C 130,110 100,120 50,115" 
+                        stroke="#ff5e36" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="20" cy="110" r="6" fill="#ffffff" stroke="#ff5e36" stroke-width="2"/>
+                  <circle cx="100" cy="50" r="5" fill="#f43f5e"/>
+                  <circle cx="200" cy="60" r="5" fill="#ff5e36"/>
+                  <text x="25" y="130" fill="#a1a1aa" font-family="'Geist Mono', monospace" font-size="10">START: ADMIRALTY PLAZA</text>
+                  <text x="105" y="40" fill="#ff5e36" font-family="'Geist Mono', monospace" font-size="10">BRIDGE INCLINE (+28M)</text>
+                </svg>
+              </div>
+
+              <div class="route-card-meta">
+                <span class="route-distance-pill tabular-nums">6.5 KM / 10 KM</span>
+                <span class="route-elevation tabular-nums">+48m Elevation</span>
+              </div>
+
+              <h3 class="route-title">The Iconic Bridge Loop</h3>
+              <p class="route-description text-pretty">
+                The sacred ground of Lagos runners. Sweeping sunrise across Five Cowries Creek, cool maritime dawn breeze, and an energizing bridge ascent.
+              </p>
+
+              <div class="route-checkpoints">
+                <span class="checkpoint-tag">Admiralty Plaza</span>
+                <span class="checkpoint-tag">Bridge Summit</span>
+                <span class="checkpoint-tag">Bourdillon Rd</span>
+                <span class="checkpoint-tag">Kingsway Return</span>
+              </div>
+            </div>
+
+            <button class="btn btn-outline" style="width: 100%;">
+              Inspect Circuit Dossier
+            </button>
+          </div>
+
+          <!-- Circuit 2: Victoria Island Marina -->
+          <div class="route-card" data-route-key="marina">
+            <div>
+              <div class="route-map-canvas">
+                <svg class="route-map-svg" viewBox="0 0 240 140" fill="none">
+                  <path d="M 30,120 L 190,120 C 220,120 220,40 180,40 L 60,40 C 20,40 20,120 30,120 Z" 
+                        stroke="#f43f5e" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="30" cy="120" r="6" fill="#ffffff" stroke="#f43f5e" stroke-width="2"/>
+                  <circle cx="190" cy="120" r="5" fill="#ff5e36"/>
+                  <text x="35" y="135" fill="#a1a1aa" font-family="'Geist Mono', monospace" font-size="10">AHMADU BELLO WAY</text>
+                  <text x="65" y="30" fill="#f43f5e" font-family="'Geist Mono', monospace" font-size="10">EKO ATLANTIC OCEAN BREEZE</text>
+                </svg>
+              </div>
+
+              <div class="route-card-meta">
+                <span class="route-distance-pill tabular-nums" style="color: var(--accent-coral); border-color: rgba(244, 63, 94, 0.3); background: rgba(244, 63, 94, 0.1);">
+                  7.80 KM
+                </span>
+                <span class="route-elevation tabular-nums">+18m Flat Coastal</span>
+              </div>
+
+              <h3 class="route-title">VI Marina & Eko Atlantic</h3>
+              <p class="route-description text-pretty">
+                Fast, oceanic, and expansive. Running parallel to the Atlantic shore with wide asphalt boulevards and Atlantic sea-spray air.
+              </p>
+
+              <div class="route-checkpoints">
+                <span class="checkpoint-tag">Silverbird Galleria</span>
+                <span class="checkpoint-tag">Eko Atlantic Gates</span>
+                <span class="checkpoint-tag">Ahmadu Bello</span>
+                <span class="checkpoint-tag">Ozumba Mbadiwe</span>
+              </div>
+            </div>
+
+            <button class="btn btn-outline" style="width: 100%;">
+              Inspect Circuit Dossier
+            </button>
+          </div>
+
+          <!-- Circuit 3: Old Ikoyi Parkview -->
+          <div class="route-card" data-route-key="ikoyi">
+            <div>
+              <div class="route-map-canvas">
+                <svg class="route-map-svg" viewBox="0 0 240 140" fill="none">
+                  <path d="M 25,70 Q 70,15 130,25 T 215,80 T 150,125 T 50,110 Z" 
+                        stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="25" cy="70" r="6" fill="#ffffff" stroke="#f59e0b" stroke-width="2"/>
+                  <text x="30" y="85" fill="#a1a1aa" font-family="'Geist Mono', monospace" font-size="10">GLOVER ROUNDABOUT</text>
+                  <text x="80" y="20" fill="#f59e0b" font-family="'Geist Mono', monospace" font-size="10">PARKVIEW CANOPY</text>
+                </svg>
+              </div>
+
+              <div class="route-card-meta">
+                <span class="route-distance-pill tabular-nums" style="color: var(--accent-amber); border-color: rgba(245, 158, 11, 0.3); background: rgba(245, 158, 11, 0.1);">
+                  8.20 KM
+                </span>
+                <span class="route-elevation tabular-nums">+32m Gentle Curves</span>
+              </div>
+
+              <h3 class="route-title">Ikoyi Canopy & Parkview</h3>
+              <p class="route-description text-pretty">
+                Lush, serene tree tunnels through the historic avenues of Old Ikoyi. Zero morning traffic, smooth asphalt, and meditative cadence.
+              </p>
+
+              <div class="route-checkpoints">
+                <span class="checkpoint-tag">Glover Rd</span>
+                <span class="checkpoint-tag">Queens Drive</span>
+                <span class="checkpoint-tag">Parkview Gate</span>
+                <span class="checkpoint-tag">Alexander Ave</span>
+              </div>
+            </div>
+
+            <button class="btn btn-outline" style="width: 100%;">
+              Inspect Circuit Dossier
+            </button>
+          </div>
+
+          <!-- Circuit 4: Falomo Beginner Social -->
+          <div class="route-card" data-route-key="falomo">
+            <div>
+              <div class="route-map-canvas">
+                <svg class="route-map-svg" viewBox="0 0 240 140" fill="none">
+                  <path d="M 20,80 C 60,80 90,40 140,40 C 190,40 220,80 200,105 C 170,130 90,120 20,80 Z" 
+                        stroke="#ff5e36" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="20" cy="80" r="6" fill="#ffffff" stroke="#ff5e36" stroke-width="2"/>
+                  <text x="25" y="95" fill="#a1a1aa" font-family="'Geist Mono', monospace" font-size="10">FALOMO WATERFRONT</text>
+                </svg>
+              </div>
+
+              <div class="route-card-meta">
+                <span class="route-distance-pill tabular-nums">5.20 KM</span>
+                <span class="route-elevation tabular-nums">0m Pure Flat</span>
+              </div>
+
+              <h3 class="route-title">Falomo Waterfront Social</h3>
+              <p class="route-description text-pretty">
+                The perfect entry circuit for newcomers and recovery runs. Conversational pace, flat course along the lagoon, finishes with fresh coconut water.
+              </p>
+
+              <div class="route-checkpoints">
+                <span class="checkpoint-tag">Falomo Bridge</span>
+                <span class="checkpoint-tag">Five Cowries Pier</span>
+                <span class="checkpoint-tag">Alfred Rewane</span>
+                <span class="checkpoint-tag">Finish at Pier</span>
+              </div>
+            </div>
+
+            <button class="btn btn-outline" style="width: 100%;">
+              Inspect Circuit Dossier
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         INTERACTIVE WEEKLY SCHEDULE & TIMETABLE
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="calendar-section" id="schedule">
+      <div class="container">
+        
+        <span class="section-label">03 // Weekly Calendar</span>
+        <h2 class="section-title text-balance">
+          The Weekly Cadence.<br>
+          <span class="dimmed">Four Sessions. Zero Excuses.</span>
+        </h2>
+
+        <!-- Filter Tabs -->
+        <div class="calendar-tabs">
+          <button class="tab-btn active" data-filter="all">All Sessions</button>
+          <button class="tab-btn" data-filter="flagship">Flagship Saturdays</button>
+          <button class="tab-btn" data-filter="intervals">Dawn Track & Intervals</button>
+          <button class="tab-btn" data-filter="social">Recovery & Social</button>
+        </div>
+
+        <!-- Schedule Rows -->
+        <div class="schedule-list">
+          
+          <!-- Event 1: Tuesday Track -->
+          <div class="schedule-row" data-category="intervals">
+            <div>
+              <div class="schedule-day">TUESDAY</div>
+              <div class="schedule-time tabular-nums">05:45 AM</div>
+            </div>
+            <div>
+              <h4 class="schedule-event-name">Dawn Tempo & Track Cadence</h4>
+              <p class="schedule-location">Lekki Phase 1 / Surulere Stadium Track</p>
+            </div>
+            <div class="schedule-meta-badge">
+              <span class="tabular-nums">6.0 KM Speedwork</span>
+              <span>· Interval Blocks</span>
+            </div>
+            <div>
+              <button class="btn btn-outline" style="width: 100%;" data-open-rsvp data-route="Tuesday Dawn Speedwork">
+                RSVP Session
+              </button>
+            </div>
+          </div>
+
+          <!-- Event 2: Thursday Easy -->
+          <div class="schedule-row" data-category="social">
+            <div>
+              <div class="schedule-day">THURSDAY</div>
+              <div class="schedule-time tabular-nums">06:00 AM</div>
+            </div>
+            <div>
+              <h4 class="schedule-event-name">Old Ikoyi Recovery Strides</h4>
+              <p class="schedule-location">Falomo Roundabout, Ikoyi Waterfront</p>
+            </div>
+            <div class="schedule-meta-badge">
+              <span class="tabular-nums">5.0 KM Easy</span>
+              <span>· Conversational Pace</span>
+            </div>
+            <div>
+              <button class="btn btn-outline" style="width: 100%;" data-open-rsvp data-route="Thursday Recovery Strides">
+                RSVP Session
+              </button>
+            </div>
+          </div>
+
+          <!-- Event 3: Saturday Flagship -->
+          <div class="schedule-row" data-category="flagship" style="border-left: 3px solid var(--accent-orange); background: #1a1a22;">
+            <div>
+              <div class="schedule-day" style="color: var(--accent-orange);">SATURDAY</div>
+              <div class="schedule-time tabular-nums">05:30 AM</div>
+            </div>
+            <div>
+              <h4 class="schedule-event-name">Lekki-Ikoyi Link Bridge Community Run</h4>
+              <p class="schedule-location">Admiralty Toll Plaza · Post-run fresh coconuts & social</p>
+            </div>
+            <div class="schedule-meta-badge">
+              <span class="tabular-nums">6.5K / 10K</span>
+              <span>· All 4 Pace Groups</span>
+            </div>
+            <div>
+              <button class="btn btn-primary" style="width: 100%;" data-open-rsvp data-route="Saturday Flagship Bridge Run">
+                Join Free
+              </button>
+            </div>
+          </div>
+
+          <!-- Event 4: Sunday Long Run -->
+          <div class="schedule-row" data-category="flagship">
+            <div>
+              <div class="schedule-day">SUNDAY</div>
+              <div class="schedule-time tabular-nums">05:15 AM</div>
+            </div>
+            <div>
+              <h4 class="schedule-event-name">Atlantic Coastline Endurance Block</h4>
+              <p class="schedule-location">Eko Atlantic Marina to Oniru Coastal Belt</p>
+            </div>
+            <div class="schedule-meta-badge">
+              <span class="tabular-nums">15.0 KM – 21.1 KM</span>
+              <span>· Half-Marathon Prep</span>
+            </div>
+            <div>
+              <button class="btn btn-outline" style="width: 100%;" data-open-rsvp data-route="Sunday Coastline Endurance">
+                RSVP Session
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         PACE CREWS SECTION ("FIND YOUR CADENCE")
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="paces-section" id="paces">
+      <div class="container">
+        
+        <div style="max-width: 680px;">
+          <span class="section-label">04 // Pace Crews</span>
+          <h2 class="section-title text-balance">
+            Find Your Cadence.<br>
+            <span class="dimmed">No Runner Left Behind. Ever.</span>
+          </h2>
+          <p class="section-lead text-pretty">
+            Every Saturday run is organized into four distinct pace packs led by experienced community pacemakers. Whether you are chasing a 20-minute 5K or lacing up for the first time, there is a crew matched to your breath.
+          </p>
+        </div>
+
+        <div class="pace-cards-grid">
+          
+          <!-- Crew 1 -->
+          <div class="pace-card">
+            <div class="pace-card-badge">01</div>
+            <h3 class="pace-title">The Cheetahs</h3>
+            <div class="pace-speed tabular-nums">4:30 – 5:15 min/km</div>
+            <p class="pace-desc text-pretty">
+              High tempo, laser-focused breathing, fast turnover. Built for seasoned athletes, track regulars, and marathoners sharpening their race-day sharpness.
+            </p>
+          </div>
+
+          <!-- Crew 2 -->
+          <div class="pace-card">
+            <div class="pace-card-badge">02</div>
+            <h3 class="pace-title">The Cadence</h3>
+            <div class="pace-speed tabular-nums">5:30 – 6:15 min/km</div>
+            <p class="pace-desc text-pretty">
+              Our largest endurance pack. Rhythmic, steady strides, balanced aerobic effort, and perfect for intermediate runners expanding their distance.
+            </p>
+          </div>
+
+          <!-- Crew 3 -->
+          <div class="pace-card">
+            <div class="pace-card-badge">03</div>
+            <h3 class="pace-title">The Cruisers</h3>
+            <div class="pace-speed tabular-nums">6:30 – 7:15 min/km</div>
+            <p class="pace-desc text-pretty">
+              The conversation pack. Smooth aerobic pace where you can comfortably chat about life, tech, and weekend plans while chewing through the kilometers.
+            </p>
+          </div>
+
+          <!-- Crew 4 -->
+          <div class="pace-card" style="border-color: rgba(255, 94, 54, 0.35);">
+            <div class="pace-card-badge" style="background: var(--gradient-sunrise); color: #fff;">04</div>
+            <h3 class="pace-title">Party Pace & Beginners</h3>
+            <div class="pace-speed tabular-nums">7:30 – 8:30+ min/km</div>
+            <p class="pace-desc text-pretty">
+              Walk/Run intervals, zero ego, pure joy. If this is your first time running in Lagos, our dedicated sweeper captains will guide you every meter of the way.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         POST-RUN RITUALS (AUTHENTIC LAGOS ATMOSPHERE)
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="rituals-section" id="rituals">
+      <div class="container">
+        
+        <span class="section-label">05 // The Rituals</span>
+        <h2 class="section-title text-balance">
+          What Happens at the Finish Line.<br>
+          <span class="dimmed">The Lagos Saturday Morning Protocol.</span>
+        </h2>
+
+        <div class="rituals-grid">
+          
+          <div class="ritual-card">
+            <div class="ritual-icon">🥥</div>
+            <h4 class="ritual-title">Fresh Admiralty Coconuts</h4>
+            <p class="ritual-text text-pretty">
+              Live chopped young green coconuts at the Admiralty Way finish line. Cold natural electrolytes and sweet coconut water directly from the husk.
+            </p>
+          </div>
+
+          <div class="ritual-card">
+            <div class="ritual-icon">🌺</div>
+            <h4 class="ritual-title">Ice-Cold Zobo Spritz</h4>
+            <p class="ritual-text text-pretty">
+              Craft brewed Nigerian hibiscus, crushed ginger, and cloves chilled over ice. Antioxidant recovery punch designed specifically for morning hydration.
+            </p>
+          </div>
+
+          <div class="ritual-card">
+            <div class="ritual-icon">☕</div>
+            <h4 class="ritual-title">Lagos Cold Brew Banter</h4>
+            <p class="ritual-text text-pretty">
+              Freshly ground specialty coffee from local artisan roasters. Stick around for breakfast banter, work talk, and genuine cross-industry connections.
+            </p>
+          </div>
+
+          <div class="ritual-card">
+            <div class="ritual-icon">🎶</div>
+            <h4 class="ritual-title">170 BPM Sound System</h4>
+            <p class="ritual-text text-pretty">
+              Afrobeats, Amapiano, and high-cadence electronic grooves playing from our portable sound rigs to keep the positive frequency vibrating long after the run.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         COMMUNITY VOICES & PHOTO STREAM ("THE FILM ROLL")
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="gallery-section" id="stories">
+      <div class="container">
+        
+        <span class="section-label">06 // Film Roll & Voices</span>
+        <h2 class="section-title text-balance">
+          Faces of the Pack.<br>
+          <span class="dimmed">Documenting Morning Light in Lagos.</span>
+        </h2>
+
+        <!-- Photo Grid -->
+        <div class="photo-grid">
+          <div class="photo-card col-4">
+            <img src="https://images.unsplash.com/photo-1486218119243-13883505764c?auto=format&fit=crop&w=900&q=80" 
+                 alt="Tying laces before dawn on asphalt" class="photo-img" loading="lazy">
+            <div class="photo-overlay">
+              <span class="photo-caption">ADMIRALTY WAY · 05:22 AM · LACING UP</span>
+            </div>
+          </div>
+
+          <div class="photo-card col-8">
+            <img src="https://images.unsplash.com/photo-1513593771513-7b58b6c4af38?auto=format&fit=crop&w=1200&q=80" 
+                 alt="Runners pack crossing bridge at sunrise" class="photo-img" loading="lazy">
+            <div class="photo-overlay">
+              <span class="photo-caption">LEKKI-IKOYI LINK BRIDGE · 05:48 AM · CROSSING THE PEAK</span>
+            </div>
+          </div>
+
+          <div class="photo-card col-6">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=80" 
+                 alt="Cadence group running in unison" class="photo-img" loading="lazy">
+            <div class="photo-overlay">
+              <span class="photo-caption">BOURDILLON ROAD · 06:12 AM · CADENCE PACK</span>
+            </div>
+          </div>
+
+          <div class="photo-card col-6">
+            <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=900&q=80" 
+                 alt="Runners smiling and hydrating post run" class="photo-img" loading="lazy">
+            <div class="photo-overlay">
+              <span class="photo-caption">FINISH LINE · 06:40 AM · FRESH COCONUTS & SMILES</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member Testimonials -->
+        <div class="testimonials-row">
+          <div class="quote-card">
+            <p class="quote-body">
+              "I used to dread cardio. Then I joined the 05:30 AM crew on the bridge. Running through the ocean mist with 50 people moving as one is spiritual."
+            </p>
+            <div class="quote-author">Tunde Adeyemi</div>
+            <div class="quote-meta">Product Designer · Member since Run #12</div>
+          </div>
+
+          <div class="quote-card">
+            <p class="quote-body">
+              "In Lagos, you normally meet people through work or nightlife. Here, you meet people through shared grit and sweat at dawn. There is zero pretension."
+            </p>
+            <div class="quote-author">Dr. Amara Okonkwo</div>
+            <div class="quote-meta">Cardiologist & Pacesetter (Cadence Crew)</div>
+          </div>
+
+          <div class="quote-card">
+            <p class="quote-body">
+              "The Party Pace group saved my fitness journey. No one judges if you need a 30-second walk break on the bridge incline. They just cheer you forward."
+            </p>
+            <div class="quote-author">Chuka Nwosu</div>
+            <div class="quote-meta">Software Engineer · First Marathon Finisher</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         FIRST-TIMER FAQ (ACCORDION)
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        
+        <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+          <span class="section-label">07 // Information</span>
+          <h2 class="section-title text-balance">
+            First-Timer Guide.<br>
+            <span class="dimmed">Everything You Need to Know.</span>
+          </h2>
+        </div>
+
+        <div class="faq-container">
+          
+          <div class="accordion-item is-open">
+            <button class="accordion-trigger" aria-expanded="true">
+              <span>Is The Runners completely free to join?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                Yes, 100% free. There are no registration fees, monthly dues, or hidden costs. We are an open athletic collective supported by community volunteers who love the city of Lagos.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Do you sell running gear, kits, or merchandise?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                No. We explicitly do not sell running gear, shoes, apparel, or equipment. Our entire mission is strictly focused on community, route planning, safety, and bringing runners together across Lagos. Wear whatever running clothes you already own!
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Where do I park safely at 05:30 AM?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                We have designated, well-lit parking with local security guards stationed directly adjacent to the Admiralty Way Toll Plaza starting from 05:15 AM every Saturday. You can leave your vehicle with total peace of mind.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>What if I haven't run in months or I am a complete beginner?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                Our Pace Crew 4 (The Party Pace) was created specifically for you! We run at a friendly conversational pace with walk breaks whenever needed. There is always a sweeper runner at the very back to ensure no one is ever left behind.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>What should I bring with me on Saturday morning?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                A comfortable pair of running shoes, a water bottle, a small running belt or pocket for your car keys, and high energy. Fresh coconut water and electrolyte spritzers are provided at the finish line!
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         JOIN COMMUNITY / NEWSLETTER CALL TO ACTION
+         ═══════════════════════════════════════════════════════════ -->
+    <section style="background: linear-gradient(180deg, #09090b 0%, #111116 100%); padding: 6rem 1.5rem;" id="rsvp">
+      <div class="container" style="max-width: 840px; text-align: center;">
+        
+        <span class="hero-tag" style="margin-bottom: 1.5rem; display: inline-block;">Free Community RSVP</span>
+        <h2 class="section-title text-balance">
+          See You on the Asphalt.<br>
+          <span style="color: var(--accent-orange);">Saturday Morning.</span>
+        </h2>
+        
+        <p class="section-lead text-pretty" style="margin: 0 auto 2.5rem;">
+          Join over 3,400 Lagosians who start their weekend moving together. Claim your digital runner pass, get added to our Strava leaderboard, and receive the direct WhatsApp rollout brief.
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <button class="btn btn-primary" style="padding: 0.9rem 2.2rem; font-size: 1rem;" data-open-rsvp>
+            Get Your Free Saturday Pass
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+          
+          <a href="https://chat.whatsapp.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.9rem 1.8rem; font-size: 1rem;">
+            Join WhatsApp Channel
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       INTERACTIVE RSVP MODAL DIALOG
+       ═══════════════════════════════════════════════════════════ -->
+  <div class="modal-backdrop" id="rsvpModal" role="dialog" aria-modal="true" aria-labelledby="modalRsvpTitle">
+    <div class="modal-dialog">
+      
+      <button class="modal-close-btn" id="closeRsvpModal" aria-label="Close dialog">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div id="formFields">
+        <span class="card-label">The Runners Lagos · Free Pass</span>
+        <h3 class="modal-title" id="modalRsvpTitle">Lace Up With Us</h3>
+        <p class="modal-desc text-pretty">
+          Enter your details below to claim your digital bib for Saturday's sunrise bridge run. No fees, ever.
+        </p>
+
+        <form id="rsvpForm">
+          <div class="form-group">
+            <label class="form-label" for="rsvpName">Full Name</label>
+            <input type="text" id="rsvpName" class="form-input" placeholder="e.g. Babatunde Balogun" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="rsvpPhone">WhatsApp Number (For morning rollout updates)</label>
+            <input type="tel" id="rsvpPhone" class="form-input" placeholder="+234 803 000 0000" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="rsvpEmail">Email Address</label>
+            <input type="email" id="rsvpEmail" class="form-input" placeholder="tunde@gmail.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="rsvpPace">Select Your Preferred Pace Crew</label>
+            <select id="rsvpPace" class="form-select">
+              <option value="The Cadence (5:30 - 6:15 min/km)">The Cadence (5:30 – 6:15 min/km) · Standard Pack</option>
+              <option value="The Cheetahs (4:30 - 5:15 min/km)">The Cheetahs (4:30 – 5:15 min/km) · Fast Tempo</option>
+              <option value="The Cruisers (6:30 - 7:15 min/km)">The Cruisers (6:30 – 7:15 min/km) · Conversational</option>
+              <option value="Party Pace (7:30+ min/km & Walk/Run)">Party Pace (7:30+ min/km) · Beginner Friendly</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="rsvpRoute">Selected Circuit</label>
+            <select id="rsvpRoute" class="form-select">
+              <option value="Lekki-Ikoyi Link Bridge Loop (6.5 KM)">Lekki-Ikoyi Link Bridge Loop (6.5 KM)</option>
+              <option value="Lekki-Ikoyi Bridge Extended (10.0 KM)">Lekki-Ikoyi Bridge Extended (10.0 KM)</option>
+              <option value="VI Marina & Eko Atlantic (7.8 KM)">VI Marina & Eko Atlantic (7.8 KM)</option>
+              <option value="Old Ikoyi Parkview Canopy (8.2 KM)">Old Ikoyi Parkview Canopy (8.2 KM)</option>
+              <option value="Falomo Waterfront Social (5.2 KM)">Falomo Waterfront Social (5.2 KM)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem; padding: 0.85rem;">
+            Generate Digital Runner Pass
+          </button>
+        </form>
+      </div>
+
+      <!-- Personalized Generated Runner Pass -->
+      <div class="ticket-pass" id="ticketPass">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div>
+            <span class="hero-tag" style="font-size: 0.65rem;">OFFICIAL DIGITAL PASS</span>
+            <h4 style="font-family: var(--font-display); font-size: 1.3rem; margin-top: 0.25rem;" id="passRunnerName">Lagos Runner</h4>
+          </div>
+          <div style="text-align: right;">
+            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-muted);">BIB #</span>
+            <div style="font-family: var(--font-mono); font-size: 1.15rem; font-weight: 700; color: var(--accent-orange);" id="passBibNumber">TR-LOS-084</div>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; padding: 0.75rem 0; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); font-size: 0.82rem; margin-bottom: 1.25rem;">
+          <div>
+            <div style="color: var(--text-muted); font-size: 0.68rem; font-family: var(--font-mono);">PACE CREW</div>
+            <div style="font-weight: 600;" id="passPaceCrew">The Cadence</div>
+          </div>
+          <div>
+            <div style="color: var(--text-muted); font-size: 0.68rem; font-family: var(--font-mono);">CIRCUIT</div>
+            <div style="font-weight: 600;" id="passRoute">Bridge Sunrise</div>
+          </div>
+          <div>
+            <div style="color: var(--text-muted); font-size: 0.68rem; font-family: var(--font-mono);">START TIME</div>
+            <div style="font-weight: 600;">Saturday · 05:30 AM</div>
+          </div>
+          <div>
+            <div style="color: var(--text-muted); font-size: 0.68rem; font-family: var(--font-mono);">MEETING POINT</div>
+            <div style="font-weight: 600;">Admiralty Toll Plaza</div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; flex-direction: column;">
+          <button id="downloadIcsBtn" class="btn btn-outline" style="width: 100%;">
+            📅 Add to Calendar (.ICS File)
+          </button>
+          <a href="https://chat.whatsapp.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+            💬 Join Saturday Rollout WhatsApp Group
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       ROUTE DETAIL MODAL DOSSIER
+       ═══════════════════════════════════════════════════════════ -->
+  <div class="modal-backdrop" id="routeDetailModal" role="dialog" aria-modal="true" aria-labelledby="modalRouteTitle">
+    <div class="modal-dialog" style="max-width: 620px;">
+      
+      <button class="modal-close-btn" id="closeRouteDetailModal" aria-label="Close dialog">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <span class="card-label">Circuit Dossier</span>
+      <h3 class="modal-title" id="modalRouteTitle">Route Name</h3>
+      
+      <div style="display: flex; gap: 1rem; margin: 1rem 0 1.5rem; flex-wrap: wrap;">
+        <span class="route-distance-pill" id="modalRouteDistance">0.0 KM</span>
+        <span class="route-elevation" id="modalRouteElevation">+0m Elevation</span>
+        <span class="route-elevation" id="modalRouteSurface">Asphalt</span>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); margin-bottom: 1.5rem;">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">Assembly Point</div>
+          <div style="font-size: 0.88rem; font-weight: 600;" id="modalRouteStart">Admiralty Way</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">Warmup / Rollout</div>
+          <div style="font-size: 0.88rem; font-weight: 600;" id="modalRouteTime">05:30 AM</div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 1.5rem;">
+        <h5 style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.5rem;">Route Characteristics</h5>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;" id="modalRouteHighlights">
+          Highlights
+        </p>
+      </div>
+
+      <div style="margin-bottom: 1.75rem;">
+        <h5 style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.5rem;">Paces Accommodated</h5>
+        <p style="font-size: 0.88rem; color: var(--accent-orange); font-family: var(--font-mono);" id="modalRoutePaces">
+          Paces
+        </p>
+      </div>
+
+      <button id="detailRsvpActionBtn" class="btn btn-primary" style="width: 100%; padding: 0.85rem;">
+        RSVP For This Circuit
+      </button>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       ARCHITECTURAL MINIMALIST FOOTER
+       ═══════════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <h2 class="footer-big-title">
+          Move As One.<br>
+          <span>The Runners®</span> Lagos.
+        </h2>
+
+        <div>
+          <p style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+            LAGOS SUNRISE ATHLETIC COLLECTIVE
+          </p>
+          <div style="display: flex; gap: 0.75rem;">
+            <a href="#hero" class="btn btn-outline" style="font-size: 0.75rem; padding: 0.4rem 0.85rem;">Back to Top ↑</a>
+            <a href="#rsvp" class="btn btn-primary" style="font-size: 0.75rem; padding: 0.4rem 0.85rem;" data-open-rsvp>Join Free</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4>Circuits & Runs</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#routes" class="footer-nav-link">Lekki-Ikoyi Bridge (6.5K / 10K)</a></li>
+            <li><a href="#routes" class="footer-nav-link">VI Marina Coastal (7.8K)</a></li>
+            <li><a href="#routes" class="footer-nav-link">Old Ikoyi Parkview (8.2K)</a></li>
+            <li><a href="#routes" class="footer-nav-link">Falomo Lagoon Social (5.2K)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community & Rituals</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#about" class="footer-nav-link">The 05:30 AM Manifesto</a></li>
+            <li><a href="#paces" class="footer-nav-link">Pace Crews & Sweepers</a></li>
+            <li><a href="#rituals" class="footer-nav-link">Post-Run Admiralty Coconuts</a></li>
+            <li><a href="#faq" class="footer-nav-link">First-Timer FAQ & Parking</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Digital Channels</h4>
+          <ul class="footer-nav-list">
+            <li><a href="https://strava.com" target="_blank" rel="noopener noreferrer" class="footer-nav-link">Strava Club · The Runners Lagos</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-nav-link">Instagram · @therunnerslagos</a></li>
+            <li><a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" class="footer-nav-link">WhatsApp Broadcast Channel</a></li>
+            <li><a href="https://spotify.com" target="_blank" rel="noopener noreferrer" class="footer-nav-link">Spotify · 170 BPM Afrobeats Cadence</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 THE RUNNERS LAGOS. ALL RIGHTS RESERVED. 100% NON-COMMERCIAL RUN CLUB.
+        </div>
+        <div>
+          COORDINATES: 6°27'18" N, 3°27'42" E · LEKKI-IKOYI LINK BRIDGE, LAGOS, NIGERIA
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Interactive Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
